@@ -2878,3 +2878,120 @@ footer {
   gap: 30px;
   flex-wrap: wrap;
 }
+
+footer {
+  background-color: #183b54;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo img {
+  max-width: 120px; /* Make the logo smaller */
+  margin-right: 10px;
+}
+
+.company-logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.link-column {
+  margin-bottom: 20px;
+}
+
+.link-column h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.hover-link {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hover-link:hover {
+  color: #f39c12;
+}
+
+.footer-container .col-md-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.subfooter {
+  background-color: #f8f9fa; /* Light gray background for the subfooter */
+  padding: 10px 0; /* Add some padding for spacing */
+}
+
+.subfooter-container {
+  justify-content: center; /* Center items horizontally */
+}
+
+.hover-link {
+  color: #333; /* Dark text color for links */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 15px; /* Space out the links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.hover-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.subfooter i {
+  font-size: 1.2rem; /* Increase icon size */
+  margin: 0 10px; /* Space out the icons */
+}
+
+
+/* CONTACT FORM   */
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background for the container */
+}
+
+.contact-image img {
+  max-width: 100%;
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+.contact-form {
+  max-width: 100%;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-form .form-control {
+  border-radius: 4px; /* Rounded corners for input fields */
+}
+
+.contact-form .btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 4px; /* Rounded corners for the button */
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
