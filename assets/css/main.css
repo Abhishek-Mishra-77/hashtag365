@@ -925,7 +925,6 @@ section,
   color: #008080; /* Teal color on hover */
 }
 
-
 /* Specific styling for About and Services dropdown links */
 #navmenu .dropdown a {
   font-weight: bold; /* Ensure dropdown links are bold */
@@ -1069,6 +1068,193 @@ section,
   }
 }
 
+/* COMPANY SECTION */
+
+.company-section {
+  padding: 60px 0;
+}
+
+.logos {
+  gap: 15px; /* Space between logos */
+}
+
+.logo {
+  max-width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 80px; /* Smaller logo size for medium and small devices */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 60px; /* Smaller logo size for small devices */
+  }
+}
+
+/* SERVICES  */
+
+.examples-section {
+  padding: 80px var(--padding-inline-section);
+}
+
+.examples-header {
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.example-header h2 {
+  margin-bottom: 20px;
+}
+
+.examples-area {
+  justify-content: space-between;
+  margin-block: 30px;
+  flex-wrap: wrap;
+}
+
+.example-card {
+  width: 23%;
+  position: relative;
+  height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(./assests/asset\ 37.jpeg);
+  background-size: cover;
+  transition: 0.3s ease-out;
+}
+
+.example-card:hover {
+  box-shadow: 2px 2px 10px 2px;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+.examples-section {
+  padding: 60px 0;
+}
+
+.examples-area {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.example-card {
+  width: 22%;
+  min-height: 200px;
+  position: relative;
+  background-color: #f0f0f0; /* Fallback color if the image doesn't load */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.example-card h3 {
+  z-index: 1;
+  color: white;
+}
+
+/* Fallback text color in case image fails */
+.example-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to ensure text visibility */
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+.primary-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.example-card {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px; /* This gives the 3D effect */
+  margin: 20px;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.example-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Rotate half on hover */
+}
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back when front is shown */
+}
+
+.card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* TESTIMONIAL  */
+
+.testimonial-sections {
+  padding: 150px var(--padding-inline-section);
+  margin-bottom: 60px;
+}
+.testimonial-section-container {
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  text-align: center;
+}
+.testimonial-stars i {
+  color: orange;
+}
+.t-img {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -2645,4 +2831,50 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* FOOTER  */
+
+.cta-sections {
+  background-color: #183b54;
+  padding: 120px var(--padding-inline-section);
+}
+
+.cta-section-container {
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  text-align: center;
+}
+
+.cta-section-container p {
+  color: white;
+  margin-top: 20px;
+}
+
+footer {
+  padding-block: 80px;
+  background-color: #ebf2fa;
+}
+
+.link-column {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.subfooter {
+  background-color: #b9cde4;
+  padding: var(--padding-inline-section);
+}
+
+.subfooter-container {
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
