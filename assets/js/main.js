@@ -197,3 +197,12 @@
   });
 
 })();
+
+
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+
+mobileMenuToggle.addEventListener('click', () => {
+  const bootstrapOffcanvas = new bootstrap.Offcanvas(mobileNav);
+  bootstrapOffcanvas.toggle();
+});

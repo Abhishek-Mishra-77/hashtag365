@@ -1,15 +1,4 @@
-/**
-* Template Name: Moderna
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -467,11 +456,31 @@ h6 {
   .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
+  
   }
+
+  .mobile-nav-toggle {
+    position: relative;
+    z-index: 1050; /* Ensure it sits on top of other content */
+  }
+
 
   .mobile-nav-active {
     overflow: hidden;
   }
+
+  /* Ensure only one close button is used */
+.offcanvas .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1050; /* Ensure it's above other content */
+}
+
+/* Hide the mobile nav toggle when the offcanvas is open */
+/* .mobile-nav-active .mobile-nav-toggle {
+  display: none; /* Hide toggle button when offcanvas is active */
+} */
 
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
@@ -493,8 +502,11 @@ h6 {
 
   .mobile-nav-active .navmenu > ul {
     display: block;
-  }
+  
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -858,6 +870,7 @@ section,
   background-color: transparent;
 }
 
+
 .hero::after,
 .hero::before {
   content: none; /* Remove pseudo-elements to clear background effects */
@@ -1070,6 +1083,24 @@ section,
 
 /* COMPANY SECTION */
 
+
+.logo {
+  max-width: 100%; /* Ensure logo width scales properly */
+  height: auto; /* Maintain aspect ratio */
+  padding: 10px; /* Add padding for better appearance */
+}
+
+/* Ensure logos are responsive on small screens */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 80%; /* Adjust size for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .carousel-item {
+    padding: 10px; /* Add padding around the carousel */
+  }
+}
 .company-section {
   padding: 60px 0;
 }
@@ -1092,7 +1123,7 @@ section,
 
 @media (max-width: 576px) {
   .logo {
-    max-width: 60px; /* Smaller logo size for small devices */
+    /* max-width: 60px;  */
   }
 }
 
