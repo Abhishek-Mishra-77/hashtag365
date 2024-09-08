@@ -2957,7 +2957,6 @@ footer {
   margin: 0 10px; /* Space out the icons */
 }
 
-
 /* CONTACT FORM   */
 
 .contact-container {
@@ -2994,4 +2993,62 @@ footer {
 
 .contact-form .btn-primary:hover {
   background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* LOGIN PAGE  */
+
+/* SIGNUP PAGE  */
+
+.signup-container {
+  width: 800px;
+  margin: auto;
+  padding: 2rem; /* Reduced padding for a more compact look */
+  margin-top: 3rem;
+  background: #f9f9f9; /* Light gray background for a softer look */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-header {
+  margin-bottom: 2rem; /* Increased space below the header */
+  font-size: 2rem; /* Larger font size for better emphasis */
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500; /* Slightly bolder labels for better readability */
+}
+
+.form-control {
+  border-radius: 4px; /* Rounded corners for inputs */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px; /* Rounded corners for button */
+  padding: 0.75rem; /* Adjusted padding for a more balanced look */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem; /* Spacing between form groups */
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Extra margin for better spacing */
+}
+
+.dropdown-menu {
+  max-height: 300px; /* Limiting dropdown height for better UI */
+  overflow-y: auto; /* Scroll for overflow content */
+}
+
+
+.main {
+  margin-top: 5rem; /* Adjust this value to increase/decrease the top margin */
 }
